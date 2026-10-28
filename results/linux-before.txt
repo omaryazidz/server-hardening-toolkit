@@ -1,0 +1,11 @@
+== Audit vps-lab-01 (Ubuntu 24.04.5 LTS) - 28 Oct 2026 16:43:19 UTC ==
+  [FAIL] SSH: root login & password login dimatikan (key only)
+  [FAIL] SSH: MaxAuthTries, timeout, X11 off, banner
+  [FAIL] Firewall aktif, default deny incoming
+  [FAIL] Fail2ban melindungi SSH dari brute force
+  [FAIL] Kernel & network hardening (sysctl)
+  [PASS] Update keamanan otomatis
+  [FAIL] Audit log (auditd) untuk file sensitif
+  [PASS] Permission /etc/shadow, /etc/passwd aman
+  [FAIL] Umur password maks 90 hari
+== Skor: 2/9 ==

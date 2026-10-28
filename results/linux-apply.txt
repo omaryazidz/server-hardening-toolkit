@@ -1,0 +1,23 @@
+  [FIX ] SSH: root login & password login dimatikan (key only)
+  [FIX ] Firewall aktif, default deny incoming
+  [FIX ] Fail2ban melindungi SSH dari brute force
+  [FIX ] Kernel & network hardening (sysctl)
+  [FIX ] Audit log (auditd) untuk file sensitif
+  [FIX ] Umur password maks 90 hari
+Backup file lama: /var/backups/hardening-20261028-164319
+
+== Audit vps-lab-01 (Ubuntu 24.04.5 LTS) - 28 Oct 2026 16:44:25 UTC ==
+  [PASS] SSH: root login & password login dimatikan (key only)
+  [PASS] SSH: MaxAuthTries, timeout, X11 off, banner
+  [PASS] Firewall aktif, default deny incoming
+  [PASS] Fail2ban melindungi SSH dari brute force
+  [PASS] Kernel & network hardening (sysctl)
+  [PASS] Update keamanan otomatis
+  [PASS] Audit log (auditd) untuk file sensitif
+  [PASS] Permission /etc/shadow, /etc/passwd aman
+  [PASS] Umur password maks 90 hari
+== Skor: 9/9 ==
+
+real	1m6.120s
+user	0m0.005s
+sys	0m0.007s

@@ -1,0 +1,4 @@
+[PASS] sysadmin login dengan SSH key
+[PASS] login password ditolak -> Permission denied (publickey)
+[PASS] login root ditolak (walau pakai key)
+[PASS] auditd mencatat perubahan /etc/passwd (15 event)
