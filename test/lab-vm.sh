@@ -60,7 +60,12 @@ EOF
 }
 
 down() {
-  [[ -f $LAB/vm.pid ]] && kill "$(cat "$LAB/vm.pid")" 2>/dev/null || true
+  local pid
+  if [[ -f $LAB/vm.pid ]]; then
+    pid=$(cat "$LAB/vm.pid")
+    kill "$pid" 2>/dev/null
+    for _ in $(seq 20); do kill -0 "$pid" 2>/dev/null || break; sleep 0.5; done # tunggu port benar-benar lepas
+  fi
   rm -f "$LAB"/vm.qcow2 "$LAB"/vm.pid "$LAB"/seed.iso
 }
 
